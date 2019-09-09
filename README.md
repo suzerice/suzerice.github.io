@@ -2,11 +2,11 @@
 
 ### Looking at site
 
-The site is live here - you can get to it from any computer (if it ever doesn't work, put a ? at the end). When you make any changes in GitHub, you can reload to see them immediately. 
+The site is live here: [https://suzerice.github.io/index.html?](https://suzerice.github.io/index.html?)
 
-[https://suzerice.github.io/index.html?](https://suzerice.github.io/index.html?)
+You can get to it from any computer. When you make any changes in GitHub, you can reload to see them immediately. 
 
-(It's technically just https://suzerice.github.io/, but that's slower to update than the above if you make a change and want to see it immediately)
+*(It's technically just https://suzerice.github.io/, but that's slower to update than the above if you make a change and want to see it immediately)*
 
 Ignore the .nojekyll file and the docs folder. They're just needed to make the website work on GitHub.
 
