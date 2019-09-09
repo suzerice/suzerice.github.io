@@ -106,15 +106,19 @@
 <section id="contact" class="about">
 	<div class="wrap">
 	<h2>Send us a message below!</h2>
-	<form>
-		<p><label>Your Name (optional): <input name="full-name" pattern="[a-zA-Z]+"></p>
-			<p><span>Your Email (so we can get back to you): <input name="email" type="email" required ></span></p>
+	    <?=$thankYou ?>
 
-		<p>What would you like to say?</p>
-		<p><textarea name="message" maxlength="500"></textarea></p>
+    <form method="post" action="scripts/email-submit.php" class="left-hey">
+        <p><label>Your Name (optional): <input name="sender" pattern="[a-zA-Z]+"></p>
+	<p>Your Email (optionally, so we can get back to you): <input name="senderEmail" type="email"></p>
 
-		<p> <input id="hi" type="submit" value="Send us your message!"></p>
+	<label>Message:</label>
+	<p><textarea rows="5" cols="20" name="message"></textarea></p>
+
+	<p> <input type="submit" value="Send us your message!"></p>
 	</form>
+	
+	
 </div>
 </section>
 	<footer>
