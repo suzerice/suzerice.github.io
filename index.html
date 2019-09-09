@@ -108,15 +108,21 @@
 	<h2>Send us a message below!</h2>
 	    <?=$thankYou ?>
 
-    <form method="post" action="scripts/email-submit.php" class="left-hey">
-        <p><label>Your Name (optional): <input name="sender" pattern="[a-zA-Z]+"></p>
-	<p>Your Email (optionally, so we can get back to you): <input name="senderEmail" type="email"></p>
+<form name="gform" id="gform" class="left-hey" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc7L0czQ3fdF6N88_hOyvkfmDL1sNHlTDBiUp1Uc_zOOsrIhQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+
+        <label>Your Name (optional):</label><input name="entry.655762380" id=“entry.655762380” pattern="[a-zA-Z]+">
+<label>Your Email (optionally, so we can get back to you)::</label> <input name="entry.1021693716" id=“entry.1021693716” type="email"></p>
 
 	<label>Message:</label>
-	<p><textarea rows="5" cols="20" name="message"></textarea></p>
+	<textarea rows="5" cols="20" name="entry.1695307007" id=“entry.1695307007”></textarea>
 
-	<p> <input type="submit" value="Send us your message!"></p>
-	</form>
+	<label>How did you hear about us? (Optional):</label>
+	<textarea rows="5" cols="20" name="entry.1652852142" id=“entry.1652852142”></textarea>
+
+	<input type="submit" value=“Submit your message!">
+</form>
+	
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 	
 	
 </div>
