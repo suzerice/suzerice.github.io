@@ -104,25 +104,26 @@
 	</section>
 <section id="contact" class="about">
 	<div class="wrap">
-	<h2>Send us a message below!</h2>
+	<h2>Questions? Comments? Requests?</h2>
+
 	    <?=$thankYou ?>
 
 <form name="gform" id="gform" class="left-hey" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc7L0czQ3fdF6N88_hOyvkfmDL1sNHlTDBiUp1Uc_zOOsrIhQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-
+	<h3>Send us a message!</h3>
         <p><label>Your Name (optional):</label><input name="entry.655762380" id=“entry.655762380” pattern="[a-zA-Z]+"> </p>
- <p><label>Your Email (optionally, so we can get back to you)::</label> <input name="entry.1021693716" id=“entry.1021693716” type="email"></p>
+ <p><label>Your Email (optional):</label> <input name="entry.1021693716" id=“entry.1021693716” type="email"></p>
 
- <p>	<label>Message:</label> </p>
- <p>	<textarea rows="5" cols="20" name="entry.1695307007" id=“entry.1695307007”></textarea> </p>
+ <p>	<label>Your Message:</label> </p>
+ <p>	<textarea rows="5" cols="20" name="entry.1695307007" id="entry.1695307007"></textarea> </p>
 
  <p>	<label>How did you hear about us? (Optional):</label> </p>
- <p>	<textarea rows="5" cols="20" name="entry.1652852142" id=“entry.1652852142”></textarea> </p>
+ <p>	<textarea rows="5" cols="20" name="entry.1652852142" id="entry.1652852142"></textarea> </p>
 
- <p>	<input type="submit" value=“Submit your message!"> <p>
+ <p>	<input type="submit" value="Send your message!"> </p>
 </form>
 	
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-	
+		<p>Or, send an email to contact@folktalebakery.com</p>
 	
 </div>
 </section>
@@ -141,7 +142,7 @@
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
+  $('#gform').prepend('Your message has been sent!');
   });
 </script>
 </body>
