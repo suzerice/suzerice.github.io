@@ -87,6 +87,12 @@ article {
 	background-color: rgb(89,103,14);
 }
 
+.contact {
+	color: white;
+	background-color: rgb(89,103,14);
+}
+
+
 /* ----------------------------------------
 Header
 ------------------------------------------- */
@@ -167,6 +173,7 @@ Gallery
 	text-transform: none;
 
 }
+
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
@@ -232,4 +239,197 @@ Responsive Styles
 		text-align: left;
 		line-height: 1.5;
 	}
+}
+
+
+/* ----------------------------------------
+FORMS
+------------------------------------------- */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 1em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 1em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 1em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 1em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: white;
+  font-size: 1em;
+}
+
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+	text-transform: none;
+}
+
+.theform {
+		text-transform: none;
+
+
+}
+
+input {
+  font-size: 1em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  outline: none;
+	color: black;
+	background-color: lavender;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+				box-sizing: content-box;
+}
+
+input:hover, input:focus  {
+	color: white;
+	background-color: indigo;
+}
+
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 200px;
+  max-height: 200px;
+	padding: 15px;
+  font-size: 1em;
+				box-sizing: content-box;
+
+  outline: none;
+
+	color: black;
+	background-color: lavender;
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover, textarea:focus {
+	color: white;
+	background-color: indigo;
+}
+
+.radios {
+	width: 470px;
+  font-size: 1em;
+  max-width: 470px;
+  padding: 15px;
+	max-height: 200px;
+	display: inline-block;
+	color: black;
+	background-color: lavender;
+	border: solid 1px #b3aca7;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+				box-sizing: content-box;
+
+}
+
+.submitbutton {
+  width: 502px;
+	box-sizing: content-box;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-size: 1em;
+  color: black;
+	background-color: thistle;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+}
+
+#submit:hover, #submit:focus  {
+	color: white;
+	background-color: plum;
 }
