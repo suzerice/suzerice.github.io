@@ -102,28 +102,39 @@
 
 		</div>
 	</section>
-<section id="contact" class="about">
+
+<section id="contact" class="contact">
 	<div class="wrap">
 	<h2>Questions? Comments? Requests?</h2>
 
 	    <?=$thankYou ?>
 
-<form name="gform" id="gform" class="left-hey" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc7L0czQ3fdF6N88_hOyvkfmDL1sNHlTDBiUp1Uc_zOOsrIhQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-	<h3>Fill in the form below or email <a href="mailto:contact@folktalebakery.com">contact@folktalebakery.com</a></h3>
-        <p><label>Your Name (optional):</label><input name="entry.655762380" id=“entry.655762380” pattern="[a-zA-Z]+"> </p>
- <p><label>Your Email (optional):</label> <input name="entry.1021693716" id=“entry.1021693716” type="email"></p>
+<form name="gform" id="gform" class="theform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc7L0czQ3fdF6N88_hOyvkfmDL1sNHlTDBiUp1Uc_zOOsrIhQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 
- <p>	<label>Your Message:</label> </p>
- <p>	<textarea rows="5" cols="20" name="entry.1695307007" id="entry.1695307007"></textarea> </p>
+<input name="entry.655762380" id=“entry.655762380” pattern="[a-zA-Z]+" placeholder="Name (Optional)" aria-label="Name">
+<input name="entry.1021693716" id=“entry.1021693716” type="email" placeholder="Email (Optional)" aria-label="Email">
+<textarea name="entry.1695307007" id="entry.1695307007" placeholder="What would you like to say?" aria-label="Message"></textarea>
 
- <p>	<label>How did you hear about us? (Optional):</label> </p>
- <p>	<textarea rows="5" cols="20" name="entry.1652852142" id="entry.1652852142"></textarea> </p>
 
- <p>	<input type="submit" value="Send your message!"> </p>
+	<div class="radios">
+
+		<label for="marketing">How did you hear about us? (Optional)</label>
+		<select id="marketing" name="entry.1652852142">
+			<option value="1">A Flea or Farmer's Market</option>
+			<option value="2">Search Results</option>
+			<option value="3">A friend or family member</option>
+			<option value="4">A Cafe or Restaurant</option>
+			<option value="5">Just stumbled on in!</option>
+		</select>
+
+  </div>
+
+<input type="submit" class="submitbutton" value="Send your message!">
 </form>
-	
+
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-	
+<p>Or, email <a href="mailto:contact@folktalebakery.com">contact@folktalebakery.com</a></p>
+
 </div>
 </section>
 	<footer>
@@ -135,7 +146,7 @@
 		<hr>
 	</footer>
 
-										 	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
