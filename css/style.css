@@ -228,7 +228,6 @@ Responsive Styles
 	.onethirdside {
 			padding-top: 0px;
 	}
-
 }
 
 @media screen and (max-width: 500px) {
@@ -259,92 +258,37 @@ Responsive Styles
 FORMS
 ------------------------------------------- */
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+
+/* input placeholder */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input::placeholder, textarea::placeholder, input::-ms-placeholder, textarea::-ms-placeholder {
   color: #aca49c;
   font-size: 1em;
 }
 
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 1em;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #aca49c;
-  font-size: 1em;
-}
-
-input:focus::placeholder, textarea::focus:placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 1em;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, textarea:focus::-moz-placeholder, input:focus::-ms-placeholder, textarea:focus::-ms-placeholder, input:focus::placeholder, textarea::focus:placeholder {
   color: white;
   font-size: 1em;
 }
 
 /* on hover placeholder */
 
-input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder, input:hover::-moz-placeholder, textarea:hover::-moz-placeholder, input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder, input:hover::placeholder, textarea:hover::placeholder, input:hover:focus::placeholder, textarea:hover:focus::placeholder, input:hover::placeholder, textarea:hover::placeholder {
+	color: white;
+	font-size: 1em;
+}
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder, input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   color: white;
   font-size: 1em;
 }
 
-input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: white;
-  font-size: 1em;
-}
 
-input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input:hover::placeholder, textarea:hover::placeholder {
-  color: white;
-  font-size: 1em;
-}
-
-input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: white;
-  font-size: 1em;
-}
-
+/* Form Specifics */
 
 #form {
   position: relative;
-  width: 500px;
+  width: 50%;
   margin: 50px auto 100px auto;
 	text-transform: none;
 }
@@ -353,25 +297,28 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 		text-transform: none;
 }
 
+/* Form fields */
 
-input {
+.shrinkform {
+  width: 50%;
+  max-width: 50%;
+	box-sizing: content-box;
   font-size: 1em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-
-  outline: none;
 	color: black;
 	background-color: lavender;
-
+  outline: none;
   border: solid 1px #b3aca7;
   border-bottom: none;
-
+	outline: none;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
-				box-sizing: content-box;
+}
+
+input {
+  height: 50px;
+  padding: 0px 15px 0px 15px;
 }
 
 input:hover, input:focus  {
@@ -379,27 +326,10 @@ input:hover, input:focus  {
 	background-color: indigo;
 }
 
-
 textarea {
-  width: 470px;
-  max-width: 470px;
   height: 200px;
   max-height: 200px;
 	padding: 15px;
-  font-size: 1em;
-				box-sizing: content-box;
-
-  outline: none;
-
-	color: black;
-	background-color: lavender;
-
-  border: solid 1px #b3aca7;
-
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
 }
 
 textarea:hover, textarea:focus {
@@ -407,38 +337,10 @@ textarea:hover, textarea:focus {
 	background-color: indigo;
 }
 
-.radios {
-	width: 470px;
-  font-size: 1em;
-  max-width: 470px;
+#radios {
   padding: 15px;
 	max-height: 200px;
 	display: inline-block;
-	color: black;
-	background-color: lavender;
-	border: solid 1px #b3aca7;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-				box-sizing: content-box;
-
-}
-
-.submitbutton {
-  width: 502px;
-	box-sizing: content-box;
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-
-  font-size: 1em;
-  color: black;
-	background-color: thistle;
-
-  outline:none;
-  cursor: pointer;
-
-  border: solid 1px #b3aca7;
 }
 
 #submit:hover, #submit:focus  {

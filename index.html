@@ -114,7 +114,7 @@
 					<p>You're good with: Chernobog Dark Chocolate Cookies, Chimera Citrus Bars, Hearthside Chocolate Chip Cookies, and Sasquatch Dark Chocolate Brownies.</p>
 				<p>Leave the Snow Queen almond cookies and Mountain Troll oatmeal almond cookies to someone else!</p>
 
-</article>
+			</article>
 		</div>
 	</section>
 
@@ -126,12 +126,12 @@
 
 		<form name="gform" id="gform" class="theform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc7L0czQ3fdF6N88_hOyvkfmDL1sNHlTDBiUp1Uc_zOOsrIhQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 
-			<input name="entry.655762380" id=“entry.655762380” pattern="[a-zA-Z]+" placeholder="Name (Optional)" aria-label="Name">
-			<input name="entry.1021693716" id=“entry.1021693716” type="email" placeholder="Email (Optional)" aria-label="Email">
-			<textarea name="entry.1695307007" id="entry.1695307007" placeholder="What would you like to say?" aria-label="Message"></textarea>
+			<input class="shrinkform" name="entry.655762380" id=“entry.655762380” pattern="[a-zA-Z]+" placeholder="Name (Optional)" aria-label="Name">
+			<input class="shrinkform" name="entry.1021693716" id=“entry.1021693716” type="email" placeholder="Email (Optional)" aria-label="Email">
+			<textarea class="shrinkform" name="entry.1695307007" id="entry.1695307007" placeholder="What would you like to say?" aria-label="Message"></textarea>
 
 
-				<div class="radios">
+				<div id="radios" class="shrinkform">
 
 					<label for="marketing">How did you hear about us?</label>
 					<select id="marketing" name="entry.1652852142">
@@ -145,7 +145,7 @@
 
 			  </div>
 
-			<input type="submit" class="submitbutton" value="Send your message!">
+			<input type="submit" class="shrinkform" value="Send your message!">
 		</form>
 
 		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
@@ -167,7 +167,7 @@
 <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
+  $('#gform *').fadeOut(0);
   $('#gform').prepend('Your message has been sent!');
   });
 </script>
