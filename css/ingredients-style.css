@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Raleway:500,600');
+
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	letter-spacing: .02em;
+	text-align: center;
+	color: #44545E; /*note: FONT COLOR */
+	font-size: 15px;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+p {
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 2.5em;
+	letter-spacing: 12px;
+}
+
+h2 {
+	margin-bottom: 45px;
+}
+
+a {
+	color: #7B98AA;
+	font-weight: 600;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+	color: #44545E;
+}
+
+th {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+
+
+.wrap {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+header {
+	text-align: left;
+	padding-top: 60px;
+
+}
+
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 100;
+}
+
+ul a {
+	text-transform: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	padding: 3px 70px;
+}
+
+nav a {
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	display: inline-block;
+	border-bottom: none;
+	text-transform: uppercase;
+}
+
+
+/* --------------------------------------
+Table
+--------------------------------------*/
+
+/* spacing */
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid green;
+	text-align: left;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #e3fbe3;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #FAFAD2;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #e3fbe3;
+}
+
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: #CDF3F6;
+	overflow: auto;
+}
+
+.social-links {
+	padding: 20px 15px 10px;
+}
+
+.social-links a {
+	font-size: 2em;
+	padding: 15px;
+	display: inline-block;
+	color: #44545E;
+}
+
+hr {
+	border: none;
+	border-bottom: 2px solid #44545E;
+}
+
+
+/* ----------------------------------------
+Responsive Styles
+------------------------------------------- */
+
+@media screen and (max-width: 745px) {
+	nav li {
+		padding: 3px 40px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 14px;
+	}
+	nav li {
+		padding: 3px 10px;
+	}
+}
